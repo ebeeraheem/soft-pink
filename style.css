@@ -364,7 +364,7 @@ strong {
 }
 .plan-card a {
   display: block;
-  padding: 0.5em 2em;
+  padding: 0.5em 1em;
   margin: 1.5em 1em;
   border-radius: 50px;
   background-color: var(--main-color);
@@ -460,19 +460,20 @@ strong {
   font-weight: 600;
 }
 
+/* ///////////////////////////////////////////////////////////////// */
 /* Contact Us */
 .contact-us {
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 8em 0;
+  padding-block: 2em;
 }
 
 .contact {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  max-width: 80%;
+  /* grid-template-columns: 1fr 2fr; */
+  max-width: 90%;
   text-align: left;
 }
 .contact p {
@@ -481,31 +482,37 @@ strong {
 
 #fullname,
 #email {
-  display: inline-block;
-  width: 45%;
+  display: block;
+  width: 100%;
   padding: 1em;
+  margin-block: 1em;
   border-radius: 50px;
   border: none;
   font-family: "Figtree", sans-serif;
 }
-#email {
-  margin-left: 9%;
-}
+
 #message {
   display: block;
   border-radius: 20px;
   border: none;
   padding: 1em;
   width: 100%;
-  margin: 2em 0;
+  margin-block: 1em;
   resize: none;
   font-family: "Figtree", sans-serif;
 }
 ::placeholder {
   font-family: "Figtree", sans-serif;
   font-weight: 400;
-  opacity: 0.6;
+  opacity: 0.4;
 }
+
+#fullname:focus,
+#email:focus,
+#message:focus {
+  outline: 2px solid var(--main-color);
+}
+
 #submit {
   background-color: var(--main-color);
   border-radius: 50px;
@@ -577,6 +584,18 @@ footer img:hover {
 
   .entries {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .contact {
+    grid-template-columns: 1fr 2fr;
+  }
+  #fullname,
+  #email {
+    width: 49%;
+    display: inline-block;
+  }
+  #email {
+    margin-left: auto;
   }
 }
 
