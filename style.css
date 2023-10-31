@@ -249,6 +249,9 @@ box-shadow:  25px 25px 50px #dfdfe3, -25px -25px 50px #ffffff; */
 .small-card h3 {
   margin: 0.5em 0;
 }
+.small-card img {
+  height: 2em;
+}
 
 /* Testimonial */
 .testimonial {
@@ -282,7 +285,9 @@ box-shadow:  25px 25px 50px #dfdfe3, -25px -25px 50px #ffffff; */
 }
 .test-card > img {
   justify-self: center;
+  height: 2em;
 }
+
 .test-card > p {
   line-height: 1.5;
   margin: 1em 0;
